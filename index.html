@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- 更改为您目标用户的语言 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习结束</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('sy.webp'); /* 请确保图片与HTML文件在同一目录下，或者提供正确的路径 */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .transparent-button {
+            position: absolute;
+            top: 80%;
+            left: 50%; /* 设置为50% */
+            transform: translateX(-50%); /* 向左移动自身宽度的一半以实现居中 */
+            width: 15%;
+            height: 8%;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+            font-size: 2vw;
+            border-radius: 10px;
+            z-index: 1;
+            font-family: '楷体', 'SimKai', 'Microsoft YaHei', sans-serif;
+        }
+
+        .transparent-overlay { 
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%; /* 覆盖整个背景的宽度 */
+            height: 50%; /* 覆盖整个背景的高度 */
+            background-color: rgba(255, 255, 255, 0.7); /* 透明背景 */
+            z-index: 2; /* 确保覆盖层位于背景图片之上 */
+            display: flex;
+            align-items: center; /* 使flex子元素垂直居中 */
+            justify-content: center; /* 使flex子元素水平居中 */
+            border-radius: 15px;
+            color: #000;
+            font-size: 100px;
+            font-family: '楷体', 'SimKai', 'Microsoft YaHei', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="transparent-button blink" onclick="location.href='https://ahahahyou.github.io/qpy/';">重新学习</div>
+    <div class="transparent-overlay">
+        <div>学习结束</div>
+    </div>
+</body>
+</html>
